@@ -55,6 +55,7 @@ a {
   height: 260px;
   width: 550px;
   object-fit: cover;
+  object-position: 10% 70%;
 }
 
 
@@ -92,7 +93,7 @@ footer {
 }
 
 .information {
-  margin: 0;
+  margin-bottom: 80px;
   padding: 80px 240px;
   overflow: hidden;
   display: flex;
@@ -102,17 +103,19 @@ footer {
 }
 
 .info-header {
-  font-size: 36px;
+  font-size: 24px;
   color: #1F2937;
   font-weight: 900;
 }
 
 .cards {
-  padding: 0;
-  margin-left: 50px;
+  height: 150px;
+  width: 150px;
   display: flex;
+  gap: 40px;
   align-content: center;
   justify-content: center;
+  color: #b4b8bf;
 }
 
 .information img {
@@ -120,17 +123,15 @@ footer {
   width: 150px;
   border: 5px solid rgb(46, 152, 250);
   border-radius: 8px;
+  object-fit: cover;
+  object-position: 20% 80%;
 }
 
-.cards li {
-  list-style-type: none;
+.card-id {
   display: flex;
   flex-direction: column;
-  align-content: space-around
-}
-
-.under-text {
-  align-: center;
+  text-align: center;
+  list-style-type: none;
 }
 
 .quote-section {
@@ -158,8 +159,15 @@ footer {
   margin: 120px 180px;
   padding: 50px;
   display: flex;
+  justify-content: space-between;
   background-color: #3882F6;
   border-radius: 10px;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
 }
 
 .action h2 {
@@ -169,12 +177,20 @@ footer {
 }
 
 .action p {
+  margin-top: -20px;
   font-size: 18px;
   font-weight: 100px;
   color: #E5E7EB;
 }
 
+.button {
+  display: block;
+  padding-right: 50px;
+  margin-top: 20px;
+}
+
 .action-button {
-  border: solid 2px #F9FAF8;
-  vertical-align: middle;
+  border: solid 3px #F9FAF8;
+  align-content: center;
+  justify-content: center;
 }
